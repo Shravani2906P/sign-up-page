@@ -22,6 +22,6 @@ Built using **HTML, CSS, and JavaScript**, focusing on usability, validation, an
 ## 📸 Preview
 
 🔗 **Live Demo:**  
-https://your-deployed-link.com
+https://shravani2906p.github.io/sign-up-page/
 
 ---
