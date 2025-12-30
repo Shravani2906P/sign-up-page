@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Sign Up Form</title>
 </head>
 <body>
-    
+    <section class="container">
+        <div class="animation-img">
+            <img src="./assets/image-animation.gif" alt="animation image">
+        </div>
+        <div class="form-container">
+            <h1 class="form__title">Sign Up Page</h1>
+            <p class="form__description">Enter your details and set up your account.</p>
+            <div class="form">
+                <form action="/" method="POST" id="form__inputs">
+                    <div class="form-row">
+                        <div class="input__box">
+                            <label for="user__name">First Name</label>
+                            <input type="text" id="user__name" placeholder=" " required>
+                        </div>
+
+                        <div class="input__box">
+                            <label for="user__lastname">Last Name</label>
+                            <input type="text" id="user__lastname" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input__box">
+                            <label for="user__email">Email</label>
+                            <input type="email" id="use__email" required>
+                        </div>
+
+                        <div class="input__box">
+                            <label for="user__phone">Phone Number</label>
+                            <input type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" id="user__phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input__box">
+                            <label for="user__password">Password</label>
+                            <input type="password" id="user__password" required>
+                        </div>
+
+                        <div class="input__box">
+                            <label for="user__confirmPassword">Confirm Password</label>
+                            <input type="password" id="user__confirmPassword" required>
+                        </div>
+
+                        <p id="passwordError" style="color:red; display:none;">
+                          * Passwords do not match
+                        </p>
+                    </div>
+
+                    <button type="submit" class="submit__btn">Create Account</button>
+                </form>
+
+                <div class="login__option">
+                    <p>Already have an account ?</p>
+                    <button class="login__btn">Log In</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
 </body>
 </html>
